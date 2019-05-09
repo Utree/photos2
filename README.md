@@ -1,6 +1,3 @@
-# application_task_for_seminar
-ゼミ応募用の課題です。
-
 ## 概要
 画像編集サイト
 
