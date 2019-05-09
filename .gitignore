@@ -1,5 +1,5 @@
 /penv
-/project/uploaded_files/api_v1/images/*
+/uploaded_files/api_v1/images/*
 ### Django ###
 *.log
 *.pot
