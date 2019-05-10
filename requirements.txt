@@ -3,7 +3,7 @@ argon2-cffi==18.3.0
 astor==0.7.1
 cffi==1.11.5
 cycler==0.10.0
-Django==2.1.6
+Django==2.1.8
 django-filter==2.0.0
 django-progressive-web-app==0.1.1
 djangorestframework==3.8.2
