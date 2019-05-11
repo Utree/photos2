@@ -24,6 +24,7 @@ from django.conf.urls.static import static
 # from api_v1.urls import router as api_v1_router
 from api_v1 import views
 from api_v2 import views
+from mediafiles import views
 
 urlpatterns = [
     # ルートをseminarアプリに任せる
@@ -32,6 +33,7 @@ urlpatterns = [
     # apiアプリ
     url(r'^api/v1/', include('api_v1.urls')),
     url(r'^api/v2/', include('api_v2.urls')),
+    url(r'^media/', include('mediafiles.urls')),
 
     # # api viewer(debug用)
     # url(r'^api/', include(api_v1_router.urls)),
@@ -41,4 +43,5 @@ urlpatterns = [
 
     # PWA
     path('', include('pwa.urls')),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # uploaded_file下を見えるようにする
+]
+# ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # uploaded_file下を見えるようにする

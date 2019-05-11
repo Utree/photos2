@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '4q*%de@a-dk39lqyrrb@9#)lx!3-cdw#v@+hwp(4-9c#wjdv94'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -137,11 +137,11 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 
-# 本来、ここも、S3などの外部サーバーで管理すべき。
-# アップロードされた画像を公開する用のURL
-MEDIA_URL = '/media/'
-# アップロードされたメディアファイルを保存するディレクトリ
-MEDIA_ROOT = os.path.join(BASE_DIR, 'uploaded_files')
+# # 本来、ここも、S3などの外部サーバーで管理すべき。
+# # アップロードされた画像を公開する用のURL
+# MEDIA_URL = '/media/'
+# # アップロードされたメディアファイルを保存するディレクトリ
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'uploaded_files')
 
 # パスワードhasher
 PASSWORD_HASHERS = [
